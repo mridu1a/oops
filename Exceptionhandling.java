@@ -4,7 +4,7 @@ class Calculator {
     private int num1;
     private int num2;
 
-    public Calculator(int num1, int num2) throws ArithmeticException {
+     Calculator(int num1, int num2) throws ArithmeticException {
         if (num1 < 0 || num2 < 0) {
             throw new ArithmeticException("Negative numbers are not allowed");
         }
@@ -13,16 +13,12 @@ class Calculator {
     }
 
     public int add() throws ArithmeticException {
-        if (num1 < 0 || num2 < 0) {
-            throw new ArithmeticException("Negative number entered for addition");
-        }
+       
         return num1 + num2;
     }
 
     public int subtract() throws ArithmeticException {
-        if (num1 < 0 || num2 < 0) {
-            throw new ArithmeticException("Negative number entered for subtraction");
-        }
+       
         return num1 - num2;
     }
 
@@ -58,7 +54,7 @@ public class Exceptionhandling {
             num2 = Integer.parseInt(input2); 
 
            
-            Calculator calc = null;
+            Calculator calc = new Calculator(num1, num2);
 
           
             System.out.println("Addition: " + calc.add());
