@@ -2,20 +2,24 @@ package Threads;
 
 class Number extends Thread {
     public void run() {
-        try {
+        
             for (int i = 1; i <= 5; i++) {
                 System.out.println("Number: " + i);
-                sleep(1000);
 
                 Square t1 = new Square(i);
                 Cube t2 = new Cube(i);
 
                 t1.start();
                 t2.start();
-            }
-        } catch (InterruptedException e) {
+                try{
+                    t1.sleep(2000);
+                    t2.sleep(2000);
+                }
+            
+         catch (InterruptedException e) {
             System.out.print(e);
         }
+    }
     }
 }
 
