@@ -8,6 +8,7 @@ public class Freq {
         System.out.println("Enter the string: ");
         String str = sc.nextLine();
         char ch;
+        sc.close();
         char chars[] = new char[str.length()];
         int k=0;
         for(int i=0;i<str.length();i++) {

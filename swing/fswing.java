@@ -5,6 +5,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class fswing {
+
     public static void main(String[] args) {
         JFrame f = new JFrame("Frame");
         JLabel jl=new JLabel("Hello");
