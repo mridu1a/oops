@@ -14,6 +14,7 @@ public class LSearch {
 
         System.out.println("enter search key:");
         search=sc.nextInt();
+        sc.close();
         for(i=0;i<n;i++){
             if(arr[i]==search){
                 flag=1;
@@ -27,7 +28,7 @@ public class LSearch {
         }
         else
             System.out.println("search key not found");
-
+        
 
 }
 

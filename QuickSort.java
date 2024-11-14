@@ -58,6 +58,7 @@ public class QuickSort
     {
       a[i]=s.nextInt();
     }
+    s.close();
     Sorting qs=new Sorting();
     qs.quicksort(a,0,n-1);
 
@@ -68,7 +69,7 @@ public class QuickSort
       System.out.print("\t");
     }
     System.out.println();
-    s.close();
+    
   }
   
 }

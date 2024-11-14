@@ -22,6 +22,7 @@ public class file1
                 writer.write(line + "\n");  // Writing user input to file
             }
             System.out.println("Text written to file successfully.");
+            inputScanner.close();
         } catch (IOException e) {
             System.out.println("Error writing to file: " + e.getMessage());
         }

@@ -163,6 +163,8 @@ public class ddlist {
                 default:
                     System.out.println("Invalid choice.");
             }
+            sc.close();
         }
+       
     }
 }

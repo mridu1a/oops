@@ -10,7 +10,7 @@ public class Pallind {
         str= new String();
         str=sc.nextLine();
         System.out.println("String is: "+str);
-
+        sc.close();
         for(int i=0;i<str.length();i++){
                 if(str.charAt(i)!=str.charAt(str.length()-i-1)){
                     flag=1;

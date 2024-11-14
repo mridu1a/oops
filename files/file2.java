@@ -22,6 +22,7 @@ public class file2
                 writer.write(line + "\n");  // Writing user input to file
             }
             System.out.println("Text written to file successfully.");
+            inputScanner.close();
         } catch (IOException e) {
             System.out.println("Error writing to file: " + e.getMessage());
         }
@@ -33,7 +34,6 @@ public class file2
             int sentenceCount = 0;
         
             int ch;
-        
 
             // Read the file character by character
             while ((ch = reader.read()) != -1) {

@@ -38,7 +38,7 @@ public class Array{
             System.out.println(currentelement+"occurs"+count+"times");
             }
         }
-
+        sc.close();
 
     }
     

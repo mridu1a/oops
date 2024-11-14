@@ -36,6 +36,10 @@ class Calc{
             }
             else{
                 System.out.println("invalid choice");   }
-        }
+        
+                s.close();   
+         }
+
+        
     }
 }

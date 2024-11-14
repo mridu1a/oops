@@ -1,6 +1,5 @@
 package swing;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 public class scalc extends JFrame implements ActionListener
 {    
@@ -191,5 +190,6 @@ catch (NumberFormatException e)
     public static void main(String args[])
     {
     scalc c1=new scalc();
+    c1.setVisible(true);
     }
     }

@@ -26,6 +26,7 @@ public class Calculator {
                 res = a*b;
                 System.out.println("multiplication is:"+res);
             }
+            s.close();
         }
     }
 }

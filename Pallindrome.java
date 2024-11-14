@@ -20,7 +20,7 @@ class Pallindrome{
         Scanner sc = new Scanner(System.in);
         System.out.print("enter a number");
         int num= sc.nextInt();
-
+        sc.close();
         if(isPalindrome(num))
         {System.out.println(num+"is pallindrome");}
         else

@@ -32,6 +32,7 @@ public class binsearch{
             System.out.println(key+" not found");
 
         }
+        sc.close();
 }
 }
  
